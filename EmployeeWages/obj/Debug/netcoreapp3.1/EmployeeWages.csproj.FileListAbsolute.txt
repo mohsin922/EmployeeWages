@@ -1,0 +1,14 @@
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\bin\Debug\netcoreapp3.1\EmployeeWages.exe
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\bin\Debug\netcoreapp3.1\EmployeeWages.deps.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\bin\Debug\netcoreapp3.1\EmployeeWages.runtimeconfig.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\bin\Debug\netcoreapp3.1\EmployeeWages.runtimeconfig.dev.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\bin\Debug\netcoreapp3.1\EmployeeWages.dll
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\bin\Debug\netcoreapp3.1\EmployeeWages.pdb
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.csproj.AssemblyReference.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.AssemblyInfoInputs.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.AssemblyInfo.cs
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.csproj.CoreCompileInputs.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.dll
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.pdb
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\Employee\EmployeeWages\EmployeeWages\obj\Debug\netcoreapp3.1\EmployeeWages.genruntimeconfig.cache
