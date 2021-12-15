@@ -6,9 +6,7 @@ namespace Employee
     {
         static void Main(string[] args)
         {
-            //Constants
-            int IS_FULL_TIME = 1;
-            int IS_PART_TIME = 2;
+           
             int EMP_RATE_PER_HOUR = 20;
             //Variables
             int empHrs = 0;
@@ -16,21 +14,35 @@ namespace Employee
             Random random = new Random(); //function while random is class
             //Computation
             int empCheck = random.Next(0, 3); //Next is method in random class
-            if (empCheck == IS_FULL_TIME)
+            switch (empCheck)
             {
-                empHrs = 8;
+                case 1:
+
+                    empHrs = 8;
+                    empWage = empHrs * EMP_RATE_PER_HOUR;
+                    Console.WriteLine("Emp Wage of Full time Employee is : " + empWage);
+                    break;
+
+                case 2:
+
+                    empHrs = 4;
+                    empWage = empHrs * EMP_RATE_PER_HOUR;
+                    Console.WriteLine("Emp Wage of Part time Employee is : " + empWage);
+                    break;
+
+
+                case 3:
+
+                    empHrs = 0;
+                    empWage = empHrs * EMP_RATE_PER_HOUR;
+                    Console.WriteLine("Emp Wage of Absent Employee is : " + empWage);
+                    break;
+                default:
+                    Console.WriteLine("Invalid selection of Employee Try Again ");
+                    break;
+                    
 
             }
-            else if (empCheck == IS_PART_TIME)
-            {
-                empHrs = 4;
-            }
-            else
-            {
-                empHrs = 0;
-            }
-            empWage = empHrs * EMP_RATE_PER_HOUR;
-            Console.WriteLine("Emp Wage : " + empWage);
 
 
 
