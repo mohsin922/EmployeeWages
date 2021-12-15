@@ -6,11 +6,12 @@ namespace Employee
     {
         static void Main(string[] args)
         {
-           
             int EMP_RATE_PER_HOUR = 20;
+            int WORKING_DAYS = 20;
             //Variables
             int empHrs = 0;
             int empWage = 0;
+            int monthlyWages = 0;
             Random random = new Random(); //function while random is class
             //Computation
             int empCheck = random.Next(0, 3); //Next is method in random class
@@ -20,14 +21,16 @@ namespace Employee
 
                     empHrs = 8;
                     empWage = empHrs * EMP_RATE_PER_HOUR;
-                    Console.WriteLine("Emp Wage of Full time Employee is : " + empWage);
+                    monthlyWages = empWage * WORKING_DAYS;
+                    Console.WriteLine("Monthly Wages of Full Time Employee is : " + monthlyWages);
                     break;
 
                 case 2:
 
                     empHrs = 4;
                     empWage = empHrs * EMP_RATE_PER_HOUR;
-                    Console.WriteLine("Emp Wage of Part time Employee is : " + empWage);
+                    monthlyWages = empWage * WORKING_DAYS;
+                    Console.WriteLine("Monthly Wages of Part Time Employee is : " + monthlyWages);
                     break;
 
 
@@ -35,7 +38,8 @@ namespace Employee
 
                     empHrs = 0;
                     empWage = empHrs * EMP_RATE_PER_HOUR;
-                    Console.WriteLine("Emp Wage of Absent Employee is : " + empWage);
+                    monthlyWages = empWage * WORKING_DAYS;
+                    Console.WriteLine("Monthly Wages of Absent Employee is : " + monthlyWages);
                     break;
                 default:
                     Console.WriteLine("Invalid selection of Employee Try Again ");
