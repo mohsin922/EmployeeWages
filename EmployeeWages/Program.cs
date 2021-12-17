@@ -4,7 +4,7 @@ namespace Employee
 {
     class Program
     {
-        static void Main(string[] args)
+        public static  int computeEmpWage()
         {
             //Constants
             int IS_FULL_TIME = 1;
@@ -43,9 +43,14 @@ namespace Employee
                 Console.WriteLine("Employee Wage : " + empWage);
             }
             Console.WriteLine("Total Wage : " + totalEmpWage);
+            return totalEmpWage;
 
 
 
+        }
+        static void Main(string[] args)
+        {
+            computeEmpWage();
         }
     }
 }
