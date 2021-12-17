@@ -19,6 +19,7 @@ namespace Employee
  
             while (totalWorkingDays <= numOfWorkingDays && totalEmpHrs < maxHoursPerMonth)
             {
+                totalWorkingDays++;
                 Random random = new Random(); //function while random is class
                 int empCheck = random.Next(0, 3); //Next is method in random class
                 if (empCheck == IS_FULL_TIME)
