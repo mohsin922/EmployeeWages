@@ -6,47 +6,43 @@ namespace Employee
     {
         static void Main(string[] args)
         {
+            //Constants
+            int IS_FULL_TIME = 1;
+            int IS_PART_TIME = 2;
             int EMP_RATE_PER_HOUR = 20;
-            int WORKING_DAYS = 20;
+            int WORKING_DAYS_IN_MONTH = 20;
+            int MAX_HRS_IN_MONTH = 100;
             //Variables
             int empHrs = 0;
             int empWage = 0;
-            int monthlyWages = 0;
-            Random random = new Random(); //function while random is class
-            //Computation
-            int empCheck = random.Next(0, 3); //Next is method in random class
-            switch (empCheck)
+            int totalEmpWage = 0;
+            int employeeWorkingHrs = 0;
+ 
+            for (int day = 0; day < WORKING_DAYS_IN_MONTH && employeeWorkingHrs < MAX_HRS_IN_MONTH; day++)
             {
-                case 1:
-
+                Random random = new Random(); //function while random is class
+                int empCheck = random.Next(0, 3); //Next is method in random class
+                if (empCheck == IS_FULL_TIME)
+                {
                     empHrs = 8;
-                    empWage = empHrs * EMP_RATE_PER_HOUR;
-                    monthlyWages = empWage * WORKING_DAYS;
-                    Console.WriteLine("Monthly Wages of Full Time Employee is : " + monthlyWages);
-                    break;
 
-                case 2:
-
+                }
+                else if (empCheck == IS_PART_TIME)
+                {
                     empHrs = 4;
-                    empWage = empHrs * EMP_RATE_PER_HOUR;
-                    monthlyWages = empWage * WORKING_DAYS;
-                    Console.WriteLine("Monthly Wages of Part Time Employee is : " + monthlyWages);
-                    break;
-
-
-                case 3:
-
+                }
+                else
+                {
                     empHrs = 0;
-                    empWage = empHrs * EMP_RATE_PER_HOUR;
-                    monthlyWages = empWage * WORKING_DAYS;
-                    Console.WriteLine("Monthly Wages of Absent Employee is : " + monthlyWages);
-                    break;
-                default:
-                    Console.WriteLine("Invalid selection of Employee Try Again ");
-                    break;
-                    
+                }
+                empWage = empHrs * EMP_RATE_PER_HOUR;
+                totalEmpWage += empWage;
+                employeeWorkingHrs += empHrs;
 
+                Console.WriteLine("Number of Days : " + day + " & Number of Working hours :" + employeeWorkingHrs);
+                Console.WriteLine("Employee Wage : " + empWage);
             }
+            Console.WriteLine("Total Wage : " + totalEmpWage);
 
 
 
