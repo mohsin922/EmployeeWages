@@ -4,21 +4,20 @@ namespace Employee
 {
     class Program
     {
-        public static  int computeEmpWage()
+        public const int IS_FULL_TIME = 1;
+        public const int IS_PART_TIME = 2;
+        public static  int computeEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
         {
-            //Constants
-            int IS_FULL_TIME = 1;
-            int IS_PART_TIME = 2;
-            int EMP_RATE_PER_HOUR = 20;
-            int WORKING_DAYS_IN_MONTH = 20;
-            int MAX_HRS_IN_MONTH = 100;
+         
             //Variables
             int empHrs = 0;
-            int empWage = 0;
-            int totalEmpWage = 0;
-            int employeeWorkingHrs = 0;
+            
+            int totalWorkingDays = 0;
+            
+            
+            int totalEmpHrs = 0;
  
-            for (int day = 0; day < WORKING_DAYS_IN_MONTH && employeeWorkingHrs < MAX_HRS_IN_MONTH; day++)
+            while (totalWorkingDays <= numOfWorkingDays && totalEmpHrs < maxHoursPerMonth)
             {
                 Random random = new Random(); //function while random is class
                 int empCheck = random.Next(0, 3); //Next is method in random class
@@ -35,14 +34,13 @@ namespace Employee
                 {
                     empHrs = 0;
                 }
-                empWage = empHrs * EMP_RATE_PER_HOUR;
-                totalEmpWage += empWage;
-                employeeWorkingHrs += empHrs;
+                totalEmpHrs += empHrs;
 
-                Console.WriteLine("Number of Days : " + day + " & Number of Working hours :" + employeeWorkingHrs);
-                Console.WriteLine("Employee Wage : " + empWage);
+                Console.WriteLine("Day#: " + totalWorkingDays + " EMP  hours :" + empHrs);
+               
             }
-            Console.WriteLine("Total Wage : " + totalEmpWage);
+            int totalEmpWage = totalEmpHrs * empRatePerHour; 
+            Console.WriteLine("Total emp Wage for company : " + company + " is:" + totalEmpWage);
             return totalEmpWage;
 
 
@@ -50,7 +48,8 @@ namespace Employee
         }
         static void Main(string[] args)
         {
-            computeEmpWage();
+            computeEmpWage("Dmart",20,2,10);
+            computeEmpWage("Dmart", 10, 4, 20);
         }
     }
 }
